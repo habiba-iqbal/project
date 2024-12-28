@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CURRENCY CONVERTER</title>
+    <script src="convert.js"></script>
+</head>
+<style>
+*{
+    border-radius: 10%;
+padding: 20px 20px 20px 20px ;
+margin: auto;
+}
+body{
+    background-color: rgba(54, 52, 53, 0.11);
+}
+h1
+{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#container
+{
+background-color: rgb(110, 55, 92);
+height: 30vh;
+width: 500px;
+margin-left: 500px;
+margin-top: 100px;
+box-shadow:16px ;
+border-radius: 10px;
+}
+#input_1,#input_2 {
+    background-color: transparent;
+    margin-top: 30px;
+    margin-left: 100px;
+    color: aliceblue;
+}
+#in1 , #in2
+{
+    background-color: transparent;
+    margin-left: 100px;
+    width: 173px;
+   
+}
+button
+{
+    padding: 10px;
+    margin-left: 120px;
+    background-color: transparent;
+}
+button:hover{
+    color: aliceblue;
+}
+</style>
+<body>
+    <h1>CURRENCY | CONVERTER </h1>
+    <div id="container">
+        
+        <p id="p1">result</p>
+        <p id="p2">result</p>
+<div>
+  <input type="number" id="box_1"class="input_1"><br>
+<select name="in1" id="inn1" class="input">
+    <option value="POUND">POUND</option>
+    <option value="DOLLAR">DOLLAR</option>
+    <option value="EURO">EURO</option>
+</select>
+<br>
+<input type="number" id="box_2"class="input_2" ><br>
+<select name="in2" id="inn2" class="input">
+    <option value="POUND">POUND</option>
+    <option value="DOLLAR">DOLLAR</option>
+    <option value="EURO">EURO</option>
+</select>
+
+</div>
+<br><br>
+<button onclick="converter()">CONVERT</button>
+    </div>
+  
+</body>
+</html>
